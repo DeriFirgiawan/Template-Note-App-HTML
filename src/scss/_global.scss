@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bgPrimary !important;
+  color: $colorBlackPrimary !important;
+  font-family: 'Inter', sans-serif !important;
+}
+
+.btn-primary {
+  background-color: $colorBluePrimary !important;
+}
+
+.btn-success {
+  background-color: $colorGreenPrimary !important;
+}

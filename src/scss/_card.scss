@@ -1,0 +1,101 @@
+// Style card detail
+.content-detail-note {
+  .card {
+    width: 100%;
+    height: auto !important;
+    padding: .65rem !important;
+    .card-body {
+      .wrapper {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        .card-title {
+          font-size: 24px !important;
+        }
+        .card-subtitle {
+          font-size: 18px !important;
+        }
+      }
+      .card-text {
+        font-size: 20px !important;
+      }
+    }
+  }
+}
+
+// Style Card Form create note
+.form-note {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .card {
+    width: 475px;
+    padding: .75rem;
+    height: auto !important;
+    &-body {
+      .form-control {
+        &:focus, &:active {
+          box-shadow: none !important;
+          outline: none !important;
+        }
+      }
+      .row {
+        .form-control {
+          border: none !important;
+          border-bottom: 4px solid $colorGrayPrimary !important;
+          border-radius: none;
+          &:focus, &:active {
+            box-shadow: none !important;
+            outline: none !important;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+// Card Content Note
+.card {
+  box-shadow: $shadow;
+  border-radius: 16px !important;
+  border: none !important;
+  margin: 0 25px;
+  width: 318px;
+  height: 176px !important;
+  @media (max-width: 575.98px) {
+    margin-top: 25px;
+  }
+  &-body {
+    padding: 8px !important;
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .card-title {
+        color: $colorBlackPrimary;
+        font-weight: 600;
+        font-size: 16px !important;
+      }
+      .card-subtitle {
+        font-size: 10px !important;
+      }
+    }
+
+    .card-text {
+      font-size: 14px !important;
+      color: $colorBlackSecondary;
+    }
+
+    .card-action {
+      .btn {
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 12px;
+        &.btn-primary {
+          background-color: $colorBluePrimary !important;
+        }
+      }
+    }
+  }
+}

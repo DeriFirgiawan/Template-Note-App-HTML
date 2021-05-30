@@ -1,0 +1,16 @@
+@import './card';
+main.container {
+  header {
+    height: 242px;
+  }
+
+  .main-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    @media (max-width: 575.98px) {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
